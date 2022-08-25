@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+  
+   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <title>IP Address Tracker</title>
+
+</head>
+<body>
+
+  <header>
+    <div class="user-ip">
+        <p id="ip-title">IP Address Tracker</p>
+        <div id="user-Input">
+          <input type="text" id="user-input" placeholder="Search for any IP address or domain"></input>
+          <img id="input-img" src="./images/icon-arrow.svg" alt="">
+        </div>
+        <div class="user-info">
+          <div class="flex-items">
+            <div id="ip-info">
+              <span>IP ADDRESS</span>
+              <p id="ip-address">120.0.0.1</p>
+          </div>
+          <div id="location-info">
+            <span>LOCATION</span>
+              <p id="location">- - - -</p>
+          </div>
+          <div id="timezone">
+            <span>Timezone</span>
+              <p id="usertimezone">- - -</p>
+          </div>
+          <div id="isp">
+            <span>ISP</span>
+              <p id="userisp">- - - -</p>
+          </div>
+        </div>
+          </div>
+          
+    </div>
+  </header>
+
+  <section>
+      <div id="map">
+
+    </div>
+  </section>
+</body>
+<script src="script.js"></script>
+
+</html>
